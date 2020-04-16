@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+{% load static %}
+<html>
+    <head>
+        <title>Korona Projekt</title>
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}" type="text/css">
+    </head>
+
+    <body>
+
+ <h2><center><a href="/" ><img src="{% static 'blog/images/Group44.svg'%}"></a></center></h2>
+
+
+    <pre><center><h4><a href="/" >Fizyka</a> <a href="/">Informatyka</a> <a href="/">Informatyka</a> <a href="/">Zaloguj</a></h4><center></center></pre>
+
+            <div class="row"
+            <div class="col-md-8">
+            <center>
+            {% block content %}
+            {% endblock %}
+            </center>
+            <center>
+            </div>
+             </body>
+
+
+
 </html>

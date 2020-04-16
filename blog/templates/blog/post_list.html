@@ -1,10 +1,13 @@
-{% load static %}
+{% extends 'blog/base.html' %}
+<!--{% load static %}
+
 <html>
     <head>
         <title>Korona Projekt</title>
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}" type="text/css">
     </head>
 
@@ -14,8 +17,9 @@
 
 
     <pre><center><h4><a href="/" >Fizyka</a> <a href="/">Matematyka</a> <a href="/">Informatyka</a> <a href="/">Zaloguj</a></h4><center></center></pre>
+-->
 
-
+    {% block content %}
         <div>
             <br>
             <br>
@@ -24,6 +28,7 @@
              <h2><center><a href="/" ><img src="{% static 'blog/images/Matematyka-button.svg'%}"></a></center></h2>
              <h3><center><a href="/" ><img src="{% static 'blog/images/Informatyka-button.svg'%}"></a></center></h3>
         </div>
+    {% endblock %}
 <!--
         {% for post in posts %}
             <div>
